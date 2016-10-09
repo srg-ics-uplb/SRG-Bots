@@ -7,7 +7,6 @@ import time
 def meters_to_feet(meters):
     return meters * 3.2808399
 
-
 # Connect to the Vehicle.
 print("Connecting to vehicle on: %s" % (connection_string,))
 vehicle = connect(connection_string, wait_ready=True)
@@ -22,12 +21,15 @@ print " System status: %s" % vehicle.system_status.state
 print " Mode: %s" % vehicle.mode.name    # settable
 
 while True:
-    print " Altitude: ", vehicle.location.global_relative_frame.alt 
+    meters = vehicle.location.global_relative_frame.alt
+    print " Altitude(m): ",meters 
+
+    #convert to feet and inches
     feet=meters_to_feet(vehicle.location.global_relative_frame.alt)
     inches = (feet * 12) % 12
     feet = int(feet)
 
-    print "meters is", feet, "feet", inches, "inches"
+    print " Altitude (ft. in)", feet, "feet", inches, "inches"
 
     time.sleep(1)
 
