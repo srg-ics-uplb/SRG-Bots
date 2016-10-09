@@ -2,10 +2,15 @@
 
 ##IP Addresses
 
-Bot : 10.0.0.1
-Netbook/Labptop (for DroneKit, OpenCV):  10.0.0.2
-Tablet (for Tower): 10.0.0.3
+Bot: 10.0.0.1
 
-##Run mavproxy on netbook
-mavproxy.py --master udp:10.0.0.2:6000 --out 10.0.0.3:14550 --out
-127.0.0.1:14551
+Netbook/Laptop:  10.0.0.2
+
+Tablet: 10.0.0.3
+
+##Enable Tower/APM Planner and DroneKit to connect
+`mavproxy.py --master udp:10.0.0.2:6000 --out 10.0.0.3:14550 --out
+127.0.0.1:14551`
+
+The command above should be executed in the Netbook. This will allow the Tablet to connect to port 14550 and DroneKit to port 14551.
+
