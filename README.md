@@ -12,5 +12,5 @@ Tablet: 10.0.0.3
 `mavproxy.py --master udp:10.0.0.2:6000 --out 10.0.0.3:14550 --out
 127.0.0.1:14551`
 
-The command above should be executed in the Netbook. This will allow the Tablet to connect to port 14550 and DroneKit to port 14551.
+The command above should be executed on the Netbook. This will allow the Tablet to connect to port 14550 and DroneKit to port 14551.
 
