@@ -1,11 +1,17 @@
-connection_string = "udp:127.0.0.1:14551"
+#!/bin/env python
 
-# Import DroneKit-Python
+#
+# Displays the altitude of the bot
+# contact: jachermocilla@gmail.com
+#
+
 from dronekit import connect, VehicleMode
 import time
 
 def meters_to_feet(meters):
     return meters * 3.2808399
+
+connection_string = "udp:127.0.0.1:14551"
 
 # Connect to the Vehicle.
 print("Connecting to vehicle on: %s" % (connection_string,))
@@ -20,8 +26,13 @@ print " Is Armable?: %s" % vehicle.is_armable
 print " System status: %s" % vehicle.system_status.state
 print " Mode: %s" % vehicle.mode.name    # settable
 
+#for indoor flying
+vehicle.parameters['AHRS_GPS_USE']=0
+
 while True:
     meters = vehicle.location.global_relative_frame.alt
+    #meters = vehicle.location.local_frame.down
+
     print " Altitude(m): ",meters 
 
     #convert to feet and inches
@@ -29,7 +40,7 @@ while True:
     inches = (feet * 12) % 12
     feet = int(feet)
 
-    print " Altitude (ft. in)", feet, "feet", inches, "inches"
+    print " Altitude (ft. in.)", feet, "feet", inches, "inches"
 
     time.sleep(1)
 
