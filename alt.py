@@ -36,7 +36,7 @@ while True:
     print " Altitude(m): ",meters 
 
     #convert to feet and inches
-    feet=meters_to_feet(vehicle.location.global_relative_frame.alt)
+    feet=meters_to_feet(meters)
     inches = (feet * 12) % 12
     feet = int(feet)
 
