@@ -1,0 +1,234 @@
+Connecting to vehicle on: udp:127.0.0.1:14551
+Get some vehicle attribute values:
+ GPS: GPSInfo:fix=1,num_sat=0
+ Battery: Battery:voltage=5.767,current=0.0,level=100
+ Last Heartbeat: 0.988929393001
+ Is Armable?: False
+ System status: CRITICAL
+ Mode: STABILIZE
+ Altitude(m):  0.09
+ Altitude (ft. in.) 0 feet 3.543307092 inches
+ Altitude(m):  0.09
+ Altitude (ft. in.) 0 feet 3.543307092 inches
+ Altitude(m):  0.1
+ Altitude (ft. in.) 0 feet 3.93700788 inches
+ Altitude(m):  0.11
+ Altitude (ft. in.) 0 feet 4.330708668 inches
+ Altitude(m):  0.12
+ Altitude (ft. in.) 0 feet 4.724409456 inches
+ Altitude(m):  0.16
+ Altitude (ft. in.) 0 feet 6.299212608 inches
+ Altitude(m):  0.18
+ Altitude (ft. in.) 0 feet 7.086614184 inches
+ Altitude(m):  0.21
+ Altitude (ft. in.) 0 feet 8.267716548 inches
+ Altitude(m):  0.23
+ Altitude (ft. in.) 0 feet 9.055118124 inches
+ Altitude(m):  0.25
+ Altitude (ft. in.) 0 feet 9.8425197 inches
+ Altitude(m):  0.24
+ Altitude (ft. in.) 0 feet 9.448818912 inches
+ Altitude(m):  0.23
+ Altitude (ft. in.) 0 feet 9.055118124 inches
+ Altitude(m):  0.22
+ Altitude (ft. in.) 0 feet 8.661417336 inches
+ Altitude(m):  0.21
+ Altitude (ft. in.) 0 feet 8.267716548 inches
+ Altitude(m):  0.19
+ Altitude (ft. in.) 0 feet 7.480314972 inches
+ Altitude(m):  0.14
+ Altitude (ft. in.) 0 feet 5.511811032 inches
+ Altitude(m):  0.12
+ Altitude (ft. in.) 0 feet 4.724409456 inches
+ Altitude(m):  0.11
+ Altitude (ft. in.) 0 feet 4.330708668 inches
+ Altitude(m):  0.12
+ Altitude (ft. in.) 0 feet 4.724409456 inches
+ Altitude(m):  0.11
+ Altitude (ft. in.) 0 feet 4.330708668 inches
+ Altitude(m):  0.13
+ Altitude (ft. in.) 0 feet 5.118110244 inches
+ Altitude(m):  0.18
+ Altitude (ft. in.) 0 feet 7.086614184 inches
+ Altitude(m):  0.23
+ Altitude (ft. in.) 0 feet 9.055118124 inches
+ Altitude(m):  0.27
+ Altitude (ft. in.) 0 feet 10.629921276 inches
+ Altitude(m):  0.29
+ Altitude (ft. in.) 0 feet 11.417322852 inches
+ Altitude(m):  0.32
+ Altitude (ft. in.) 1 feet 0.598425216 inches
+ Altitude(m):  0.32
+ Altitude (ft. in.) 1 feet 0.598425216 inches
+ Altitude(m):  0.3
+ Altitude (ft. in.) 0 feet 11.81102364 inches
+ Altitude(m):  0.28
+ Altitude (ft. in.) 0 feet 11.023622064 inches
+ Altitude(m):  0.24
+ Altitude (ft. in.) 0 feet 9.448818912 inches
+ Altitude(m):  0.24
+ Altitude (ft. in.) 0 feet 9.448818912 inches
+ Altitude(m):  0.19
+ Altitude (ft. in.) 0 feet 7.480314972 inches
+ Altitude(m):  0.17
+ Altitude (ft. in.) 0 feet 6.692913396 inches
+ Altitude(m):  0.18
+ Altitude (ft. in.) 0 feet 7.086614184 inches
+ Altitude(m):  0.19
+ Altitude (ft. in.) 0 feet 7.480314972 inches
+ Altitude(m):  0.23
+ Altitude (ft. in.) 0 feet 9.055118124 inches
+ Altitude(m):  0.27
+ Altitude (ft. in.) 0 feet 10.629921276 inches
+ Altitude(m):  0.31
+ Altitude (ft. in.) 1 feet 0.204724428 inches
+ Altitude(m):  0.35
+ Altitude (ft. in.) 1 feet 1.77952758 inches
+ Altitude(m):  0.39
+ Altitude (ft. in.) 1 feet 3.354330732 inches
+ Altitude(m):  0.38
+ Altitude (ft. in.) 1 feet 2.960629944 inches
+ Altitude(m):  0.35
+ Altitude (ft. in.) 1 feet 1.77952758 inches
+ Altitude(m):  0.3
+ Altitude (ft. in.) 0 feet 11.81102364 inches
+ Altitude(m):  0.3
+ Altitude (ft. in.) 0 feet 11.81102364 inches
+ Altitude(m):  0.27
+ Altitude (ft. in.) 0 feet 10.629921276 inches
+ Altitude(m):  0.22
+ Altitude (ft. in.) 0 feet 8.661417336 inches
+ Altitude(m):  0.14
+ Altitude (ft. in.) 0 feet 5.511811032 inches
+ Altitude(m):  0.13
+ Altitude (ft. in.) 0 feet 5.118110244 inches
+ Altitude(m):  0.2
+ Altitude (ft. in.) 0 feet 7.87401576 inches
+ Altitude(m):  0.28
+ Altitude (ft. in.) 0 feet 11.023622064 inches
+ Altitude(m):  0.39
+ Altitude (ft. in.) 1 feet 3.354330732 inches
+ Altitude(m):  0.52
+ Altitude (ft. in.) 1 feet 8.472440976 inches
+ Altitude(m):  0.62
+ Altitude (ft. in.) 2 feet 0.409448856 inches
+ Altitude(m):  0.67
+ Altitude (ft. in.) 2 feet 2.377952796 inches
+ Altitude(m):  0.78
+ Altitude (ft. in.) 2 feet 6.708661464 inches
+ Altitude(m):  0.94
+ Altitude (ft. in.) 3 feet 1.007874072 inches
+ Altitude(m):  1.03
+ Altitude (ft. in.) 3 feet 4.551181164 inches
+ Altitude(m):  1.12
+ Altitude (ft. in.) 3 feet 8.094488256 inches
+ Altitude(m):  1.26
+ Altitude (ft. in.) 4 feet 1.606299288 inches
+ Altitude(m):  1.41
+ Altitude (ft. in.) 4 feet 7.511811108 inches
+ Altitude(m):  1.53
+ Altitude (ft. in.) 5 feet 0.236220564 inches
+ Altitude(m):  1.54
+ Altitude (ft. in.) 5 feet 0.629921352 inches
+ Altitude(m):  1.48
+ Altitude (ft. in.) 4 feet 10.267716624 inches
+ Altitude(m):  1.36
+ Altitude (ft. in.) 4 feet 5.543307168 inches
+ Altitude(m):  1.32
+ Altitude (ft. in.) 4 feet 3.968504016 inches
+ Altitude(m):  1.22
+ Altitude (ft. in.) 4 feet 0.031496136 inches
+ Altitude(m):  1.13
+ Altitude (ft. in.) 3 feet 8.488189044 inches
+ Altitude(m):  1.07
+ Altitude (ft. in.) 3 feet 6.125984316 inches
+ Altitude(m):  0.99
+ Altitude (ft. in.) 3 feet 2.976378012 inches
+ Altitude(m):  0.97
+ Altitude (ft. in.) 3 feet 2.188976436 inches
+ Altitude(m):  0.96
+ Altitude (ft. in.) 3 feet 1.795275648 inches
+ Altitude(m):  0.99
+ Altitude (ft. in.) 3 feet 2.976378012 inches
+ Altitude(m):  1.0
+ Altitude (ft. in.) 3 feet 3.3700788 inches
+ Altitude(m):  1.02
+ Altitude (ft. in.) 3 feet 4.157480376 inches
+ Altitude(m):  1.04
+ Altitude (ft. in.) 3 feet 4.944881952 inches
+ Altitude(m):  1.0
+ Altitude (ft. in.) 3 feet 3.3700788 inches
+ Altitude(m):  1.11
+ Altitude (ft. in.) 3 feet 7.700787468 inches
+ Altitude(m):  1.26
+ Altitude (ft. in.) 4 feet 1.606299288 inches
+ Altitude(m):  1.32
+ Altitude (ft. in.) 4 feet 3.968504016 inches
+ Altitude(m):  1.37
+ Altitude (ft. in.) 4 feet 5.937007956 inches
+ Altitude(m):  1.36
+ Altitude (ft. in.) 4 feet 5.543307168 inches
+ Altitude(m):  1.4
+ Altitude (ft. in.) 4 feet 7.11811032 inches
+ Altitude(m):  1.41
+ Altitude (ft. in.) 4 feet 7.511811108 inches
+ Altitude(m):  1.45
+ Altitude (ft. in.) 4 feet 9.08661426 inches
+ Altitude(m):  1.48
+ Altitude (ft. in.) 4 feet 10.267716624 inches
+ Altitude(m):  1.48
+ Altitude (ft. in.) 4 feet 10.267716624 inches
+ Altitude(m):  1.49
+ Altitude (ft. in.) 4 feet 10.661417412 inches
+ Altitude(m):  1.48
+ Altitude (ft. in.) 4 feet 10.267716624 inches
+ Altitude(m):  1.45
+ Altitude (ft. in.) 4 feet 9.08661426 inches
+ Altitude(m):  1.41
+ Altitude (ft. in.) 4 feet 7.511811108 inches
+ Altitude(m):  1.36
+ Altitude (ft. in.) 4 feet 5.543307168 inches
+ Altitude(m):  1.3
+ Altitude (ft. in.) 4 feet 3.18110244 inches
+ Altitude(m):  1.26
+ Altitude (ft. in.) 4 feet 1.606299288 inches
+ Altitude(m):  1.23
+ Altitude (ft. in.) 4 feet 0.425196924 inches
+ Altitude(m):  1.24
+ Altitude (ft. in.) 4 feet 0.818897712 inches
+ Altitude(m):  1.24
+ Altitude (ft. in.) 4 feet 0.818897712 inches
+ Altitude(m):  1.26
+ Altitude (ft. in.) 4 feet 1.606299288 inches
+ Altitude(m):  1.28
+ Altitude (ft. in.) 4 feet 2.393700864 inches
+ Altitude(m):  1.31
+ Altitude (ft. in.) 4 feet 3.574803228 inches
+ Altitude(m):  1.41
+ Altitude (ft. in.) 4 feet 7.511811108 inches
+ Altitude(m):  1.44
+ Altitude (ft. in.) 4 feet 8.692913472 inches
+ Altitude(m):  1.3
+ Altitude (ft. in.) 4 feet 3.18110244 inches
+ Altitude(m):  1.07
+ Altitude (ft. in.) 3 feet 6.125984316 inches
+ Altitude(m):  0.75
+ Altitude (ft. in.) 2 feet 5.5275591 inches
+ Altitude(m):  0.5
+ Altitude (ft. in.) 1 feet 7.6850394 inches
+ Altitude(m):  0.6
+ Altitude (ft. in.) 1 feet 11.62204728 inches
+ Altitude(m):  0.64
+ Altitude (ft. in.) 2 feet 1.196850432 inches
+ Altitude(m):  0.17
+ Altitude (ft. in.) 0 feet 6.692913396 inches
+ Altitude(m):  0.18
+ Altitude (ft. in.) 0 feet 7.086614184 inches
+ Altitude(m):  0.22
+ Altitude (ft. in.) 0 feet 8.661417336 inches
+ Altitude(m):  0.27
+ Altitude (ft. in.) 0 feet 10.629921276 inches
+ Altitude(m):  0.32
+ Altitude (ft. in.) 1 feet 0.598425216 inches
+ Altitude(m):  0.36
+ Altitude (ft. in.) 1 feet 2.173228368 inches
