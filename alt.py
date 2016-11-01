@@ -29,20 +29,24 @@ print " Mode: %s" % vehicle.mode.name    # settable
 #for indoor flying
 vehicle.parameters['AHRS_GPS_USE']=0
 
+t=0
 while True:
     meters = vehicle.location.global_relative_frame.alt
     #meters = vehicle.location.local_frame.down
-
-    print " Altitude(m): ",meters 
 
     #convert to feet and inches
     feet=meters_to_feet(meters)
     inches = (feet * 12) % 12
     feet = int(feet)
 
+    print " Altitude(m): ",meters 
     print " Altitude (ft. in.)", feet, "feet", inches, "inches"
 
+    #tabular form that can be redirected to a file
+    #print t, "," ,meters, "," ,feet, "," ,inches
+
     time.sleep(1)
+    t=t+1
 
 # Close vehicle object before exiting script
 vehicle.close()
