@@ -9,6 +9,8 @@ Netbook/Laptop:  10.0.0.2
 Tablet: 10.0.0.3
 
 ##Enable Tower/APM Planner and DroneKit to connect
+Activate the dronekit virtual environment then run the command below.
+
 `mavproxy.py --master udp:10.0.0.2:6000 --out 10.0.0.3:14550 --out
 127.0.0.1:14551`
 
