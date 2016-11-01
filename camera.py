@@ -4,9 +4,10 @@ import cv2
 #Contact: jachermocilla@gmail.com
 
 #for drone
-#cap = cv2.VideoCapture("rtp://0.0.0.0:1234")
+cap = cv2.VideoCapture("rtp://0.0.0.0:1234")
 
-cap = cv2.VideoCapture(0)
+#for netbook
+#cap = cv2.VideoCapture(0)
 
 # Define the codec and create VideoWriter object
 fourcc = cv2.cv.CV_FOURCC(*'XVID')
