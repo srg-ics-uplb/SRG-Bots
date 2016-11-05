@@ -39,11 +39,11 @@ while True:
     inches = (feet * 12) % 12
     feet = int(feet)
 
-    print " Altitude(m): ",meters 
-    print " Altitude (ft. in.)", feet, "feet", inches, "inches"
+    #print " Altitude(m): ",meters 
+    #print " Altitude (ft. in.)", feet, "feet", inches, "inches"
 
     #tabular form that can be redirected to a file
-    #print t, "," ,meters, "," ,feet, "," ,inches
+    print t,",",meters,",",feet,",",inches
 
     time.sleep(1)
     t=t+1
