@@ -17,7 +17,9 @@ def arm_and_takeoff(aTargetAltitude):
         
   print "Arming motors"
   # Copter should arm in GUIDED mode
-  vehicle.mode    = VehicleMode("STABILIZE")
+  #vehicle.mode    = VehicleMode("STABILIZE")
+  vehicle.mode    = VehicleMode("GUIDED")
+
   vehicle.armed   = True
 
   while not vehicle.armed:
@@ -25,8 +27,8 @@ def arm_and_takeoff(aTargetAltitude):
     time.sleep(1)
 
   print "Taking off!"
-  #vehicle.simple_takeoff(aTargetAltitude) # Take off to target altitude
-  vehicle.commands.takeoff(aTargetAltitude) # Take off to target altitude
+  vehicle.simple_takeoff(aTargetAltitude) # Take off to target altitude
+  #vehicle.commands.takeoff(aTargetAltitude) # Take off to target altitude
 
   # Check that vehicle has reached takeoff altitude
   while True:
@@ -38,10 +40,10 @@ def arm_and_takeoff(aTargetAltitude):
     time.sleep(1)
 
 #for indoor flying
-vehicle.parameters['AHRS_GPS_USE']=0
+#vehicle.parameters['AHRS_GPS_USE']=0
 
 # Initialize the takeoff sequence to 2.0m
-arm_and_takeoff(2)
+arm_and_takeoff(1.5)
 
 print("Take off complete")
 
