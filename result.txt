@@ -1,0 +1,15 @@
+ Waiting for arming...
+>>> Initialising APM...
+>>> Low Battery!
+Taking off!
+ Altitude:  0.0
+ Altitude:  0.06
+ Altitude:  0.45
+ Altitude:  1.43
+ Altitude:  2.05
+ Altitude:  2.34
+ Altitude:  2.55
+Reached target altitude
+Take off complete
+Now let's land
+

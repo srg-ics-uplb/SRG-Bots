@@ -43,12 +43,12 @@ def arm_and_takeoff(aTargetAltitude):
 #vehicle.parameters['AHRS_GPS_USE']=0
 
 # Initialize the takeoff sequence to 2.0m
-arm_and_takeoff(2.0)
+arm_and_takeoff(2.5)
 
 print("Take off complete")
 
 print("Now let's land")
-vehicle.mode = VehicleMode("ALT-HOLD")
+vehicle.mode = VehicleMode("LAND")
 
 # Close vehicle object
 vehicle.close()
