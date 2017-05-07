@@ -1,6 +1,6 @@
-#SRG-Bots
+# SRG-Bots
 
-##IP Addresses
+## IP Addresses
 
 Bot: 10.0.0.1
 
