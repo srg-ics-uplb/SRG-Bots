@@ -10,4 +10,5 @@ DURATION=300
 
 #streaming and recording
 #To view: $vlc rtp://0.0.0.0:1234
-sudo avconv -f video4linux2 -s 160x120 -i /dev/video0 -vcodec mpeg2video -r 25 -vf transpose=1,transpose=1 -pix_fmt yuv420p -me_method epzs -b 2600k -bt 256k -f rtp rtp://10.0.0.3:1234
+#sudo avconv -f video4linux2 -s 160x120 -i /dev/video0 -vcodec mpeg2video -r 25 -vf transpose=1,transpose=1 -pix_fmt yuv420p -me_method epzs -b 2600k -bt 256k -f rtp rtp://10.0.0.3:1234
+sudo avconv -f video4linux2 -s 160x120 -i /dev/video0 -vcodec mpeg2video -r 25 -pix_fmt yuv420p -me_method epzs -b 2600k -bt 256k -f rtp rtp://10.0.0.3:1234
