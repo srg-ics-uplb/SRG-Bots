@@ -60,6 +60,10 @@ def arm_and_takeoff(aTargetAltitude):
         
     print "Arming motors"
     # Copter should arm in GUIDED mode
+    
+    vehicle.mode = VehicleMode("STABILIZE")
+    time.sleep(5)
+
     vehicle.mode = VehicleMode("GUIDED")
     vehicle.armed = True    
 
@@ -82,7 +86,7 @@ def arm_and_takeoff(aTargetAltitude):
         time.sleep(1)
 
 #delay a little
-time.sleep(5)
+#time.sleep(5)
 
 arm_and_takeoff(flightAltitude)
 
@@ -90,27 +94,30 @@ print "Set default/target airspeed to 3"
 vehicle.airspeed = 3
 
 # sleep so we can see the change in map
-time.sleep(60)
+time.sleep(30)
 
 print "Going to target (groundspeed set to 5 m/s) ..."
 vehicle.simple_goto(target, groundspeed=5)
 
 # sleep so we can see the change in map
-time.sleep(60)
+time.sleep(45)
 
 print "Going home  (groundspeed set to 10 m/s) ..."
 vehicle.simple_goto(home, groundspeed=10)
 
 # sleep so we can see the change in map
-time.sleep(60)
+time.sleep(45)
 
 vehicle.mode = VehicleMode("LAND")
 
-#print "Returning to Launch"
-#vehicle.mode = VehicleMode("RTL")
+while vehicle.armed:      
+   print " Waiting to land and disarm..."
+   print " Altitude: ", vehicle.location.global_relative_frame.alt
+   time.sleep(1)
+
 
 #Close vehicle object before exiting script
-print "Close vehicle object"
+print "Closing vehicle object."
 vehicle.close()
 
 # Shut down simulator if it was started.
