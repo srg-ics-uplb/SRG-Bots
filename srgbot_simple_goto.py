@@ -81,6 +81,7 @@ def arm_and_takeoff(aTargetAltitude):
             break
         time.sleep(1)
 
+#delay a little
 time.sleep(5)
 
 arm_and_takeoff(flightAltitude)
@@ -89,19 +90,19 @@ print "Set default/target airspeed to 3"
 vehicle.airspeed = 3
 
 # sleep so we can see the change in map
-time.sleep(30)
+time.sleep(60)
 
 print "Going to target (groundspeed set to 5 m/s) ..."
 vehicle.simple_goto(target, groundspeed=5)
 
 # sleep so we can see the change in map
-time.sleep(30)
+time.sleep(60)
 
 print "Going home  (groundspeed set to 10 m/s) ..."
 vehicle.simple_goto(home, groundspeed=10)
 
 # sleep so we can see the change in map
-time.sleep(30)
+time.sleep(60)
 
 vehicle.mode = VehicleMode("LAND")
 
