@@ -3,7 +3,9 @@
 
 
 from dronekit import connect, VehicleMode, LocationGlobalRelative
+
 import time
+import math
 
 
 #Set up option parsing to get connection string
@@ -40,6 +42,19 @@ homeLongitude=0;
 home=LocationGlobalRelative(homeLatitude, homeLongitude, flightAltitude);
 
 
+def get_distance_meters(aLocation1, aLocation2):
+    """
+    Returns the ground distance in metres between two `LocationGlobal` or `LocationGlobalRelative` objects.
+
+    This method is an approximation, and will not be accurate over large distances and close to the
+    earth's poles. It comes from the ArduPilot test code:
+    https://github.com/diydrones/ardupilot/blob/master/Tools/autotest/common.py
+    """
+    dlat = aLocation2.lat - aLocation1.lat
+    dlong = aLocation2.lon - aLocation1.lon
+    return math.sqrt((dlat*dlat) + (dlong*dlong)) * 1.113195e5
+
+
 def arm_and_takeoff(aTargetAltitude):
     """
     Arms vehicle and fly to aTargetAltitude.
@@ -56,6 +71,8 @@ def arm_and_takeoff(aTargetAltitude):
     homeLatitude=vehicle.location.global_relative_frame.lat
     homeLongitude=vehicle.location.global_relative_frame.lon
     home=LocationGlobalRelative(homeLatitude, homeLongitude, flightAltitude);
+
+    print "Distance: ",get_distance_meters(home,target)
 
         
     print "Arming motors"
@@ -96,14 +113,14 @@ vehicle.airspeed = 3
 # sleep so we can see the change in map
 time.sleep(30)
 
-print "Going to target (groundspeed set to 5 m/s) ..."
-vehicle.simple_goto(target, groundspeed=5)
+print "Going to target (groundspeed set to 10 m/s) ..."
+vehicle.simple_goto(target, groundspeed=10)
 
 # sleep so we can see the change in map
 time.sleep(45)
 
-print "Going home  (groundspeed set to 10 m/s) ..."
-vehicle.simple_goto(home, groundspeed=10)
+print "Going home  (groundspeed set to 5 m/s) ..."
+vehicle.simple_goto(home, groundspeed=5)
 
 # sleep so we can see the change in map
 time.sleep(45)
