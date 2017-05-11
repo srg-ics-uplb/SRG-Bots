@@ -29,6 +29,8 @@ print " Mode: %s" % vehicle.mode.name    # settable
 #for indoor flying
 vehicle.parameters['AHRS_GPS_USE']=0
 
+vehicle.mode = VehicleMode("GUIDED")
+
 t=0
 while True:
     meters = vehicle.location.global_relative_frame.alt
