@@ -34,6 +34,11 @@ vehicle = connect(connection_string, wait_ready=True)
 #Mission parameters
 targetLatitude=14.1601549;
 targetLongitude=121.2420353;
+
+#location ics front physci
+#targetLatitude=14.1646794;
+#targetLongitude=121.2418919;
+
 flightAltitude=5;
 target=LocationGlobalRelative(targetLatitude, targetLongitude, flightAltitude);
 
