@@ -14,6 +14,8 @@ connection_string = "udp:127.0.0.1:14551"
 print("Connecting to vehicle on: %s" % (connection_string,))
 vehicle = connect(connection_string, wait_ready=True)
 
+vehicle.mode = VehicleMode("STABILIZE")
+
 # Get some vehicle attributes (state)
 print "Get some vehicle attribute values:"
 print " GPS: %s" % vehicle.gps_0
@@ -24,7 +26,6 @@ print " System status: %s" % vehicle.system_status.state
 print " Mode: %s" % vehicle.mode.name    # settable
 
 
-vehicle.mode = VehicleMode("ALT_HOLD")
 vehicle.armed = True
 
 while not vehicle.is_armable:
@@ -32,6 +33,8 @@ while not vehicle.is_armable:
    time.sleep(1)
 
 print "Home: ", vehicle.location.global_relative_frame
+
+time.sleep(5)
 
 vehicle.armed = False
 
