@@ -3,7 +3,6 @@
 
 
 from dronekit import connect, VehicleMode, LocationGlobalRelative
-
 import time
 import math
 
@@ -32,6 +31,7 @@ print 'Connecting to vehicle on: %s' % connection_string
 vehicle = connect(connection_string, wait_ready=True)
 
 #Mission parameters
+#################################################################################
 targetLatitude=14.1601549;
 targetLongitude=121.2420353;
 
@@ -45,6 +45,13 @@ target=LocationGlobalRelative(targetLatitude, targetLongitude, flightAltitude);
 homeLatitude=0;
 homeLongitude=0;
 home=LocationGlobalRelative(homeLatitude, homeLongitude, flightAltitude);
+
+airspeed=3
+mission_groundspeed=1
+
+distance=0
+################################################################################
+
 
 
 def get_distance_meters(aLocation1, aLocation2):
@@ -65,6 +72,7 @@ def arm_and_takeoff(aTargetAltitude):
     Arms vehicle and fly to aTargetAltitude.
     """
     global home
+    global distance
 
     print "Basic pre-arm checks"
     # Don't try to arm until autopilot is ready
@@ -72,14 +80,16 @@ def arm_and_takeoff(aTargetAltitude):
         print " Waiting for vehicle to initialise..."
         time.sleep(1)
 
+
+    #Get the home location
     print "Home: ", vehicle.location.global_relative_frame
     homeLatitude=vehicle.location.global_relative_frame.lat
     homeLongitude=vehicle.location.global_relative_frame.lon
     home=LocationGlobalRelative(homeLatitude, homeLongitude, flightAltitude);
 
-    print "Distance: ",get_distance_meters(home,target)
+    distance=get_distance_meters(home,target)
 
-        
+    print "Distance: ", distance
     print "Arming motors"
     # Copter should arm in GUIDED mode
     
@@ -113,22 +123,23 @@ def arm_and_takeoff(aTargetAltitude):
 arm_and_takeoff(flightAltitude)
 
 print "Set default/target airspeed to 3"
-vehicle.airspeed = 3
+vehicle.airspeed = airspeed
 
 # sleep so we can see the change in map
-time.sleep(30)
+#time.sleep(5)
 
-print "Going to target (groundspeed set to 10 m/s) ..."
-vehicle.simple_goto(target, groundspeed=10)
-
-# sleep so we can see the change in map
-time.sleep(45)
-
-print "Going home  (groundspeed set to 5 m/s) ..."
-vehicle.simple_goto(home, groundspeed=5)
+print "Going to target (groundspeed set to 1 m/s) ..."
+vehicle.simple_goto(target, groundspeed=mission_groundspeed)
 
 # sleep so we can see the change in map
-time.sleep(45)
+print "Sleep: ",int(distance/mission_groundspeed)
+time.sleep(int(distance/mission_groundspeed)+5)
+
+print "Going home  (groundspeed set to 1 m/s) ..."
+vehicle.simple_goto(home, groundspeed=mission_groundspeed)
+
+# sleep so we can see the change in map
+time.sleep(int(distance/mission_groundspeed)+5)
 
 vehicle.mode = VehicleMode("LAND")
 
