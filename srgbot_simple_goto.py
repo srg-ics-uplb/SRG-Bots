@@ -149,6 +149,9 @@ while vehicle.armed:
    time.sleep(1)
 
 
+vehicle.mode = VehicleMode("STABILIZE")
+vehicle.armed = False
+
 #Close vehicle object before exiting script
 print "Closing vehicle object."
 vehicle.close()
