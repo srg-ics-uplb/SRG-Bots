@@ -50,6 +50,14 @@ print("Take off complete")
 print("Now let's land")
 vehicle.mode = VehicleMode("LAND")
 
+while vehicle.armed:      
+   print " Waiting to land and disarm..."
+   print " Altitude: ", vehicle.location.global_relative_frame.alt
+   time.sleep(1)
+
+vehicle.mode = VehicleMode("STABILIZE")
+vehicle.armed = False
+
 # Close vehicle object
 vehicle.close()
 
