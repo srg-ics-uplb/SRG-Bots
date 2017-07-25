@@ -21,6 +21,7 @@ def arm_and_takeoff(aTargetAltitude):
   vehicle.mode    = VehicleMode("GUIDED")
 
   vehicle.armed   = True
+  vehicle.airspeed = 1
 
   while not vehicle.armed:
     print " Waiting for arming..."
@@ -43,7 +44,7 @@ def arm_and_takeoff(aTargetAltitude):
 #vehicle.parameters['AHRS_GPS_USE']=0
 
 # Initialize the takeoff sequence to 2.0m
-arm_and_takeoff(3.0)
+arm_and_takeoff(3.2)
 
 print("Take off complete")
 
